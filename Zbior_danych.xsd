@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Zbior_danych" targetNamespace="http://tempuri.org/Zbior_danych.xsd" xmlns:mstns="http://tempuri.org/Zbior_danych.xsd" xmlns="http://tempuri.org/Zbior_danych.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Zbior_danych" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Zbior_danych" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Zbior_danych">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Tabela_osob" msprop:Generator_RowClassName="Tabela_osobRow" msprop:Generator_RowEvHandlerName="Tabela_osobRowChangeEventHandler" msprop:Generator_RowDeletedName="Tabela_osobRowDeleted" msprop:Generator_RowDeletingName="Tabela_osobRowDeleting" msprop:Generator_RowEvArgName="Tabela_osobRowChangeEvent" msprop:Generator_TablePropName="Tabela_osob" msprop:Generator_RowChangedName="Tabela_osobRowChanged" msprop:Generator_UserTableName="Tabela_osob" msprop:Generator_RowChangingName="Tabela_osobRowChanging" msprop:Generator_TableClassName="Tabela_osobDataTable" msprop:Generator_TableVarName="tableTabela_osob">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:int" />
+              <xs:element name="Imie" msprop:Generator_UserColumnName="Imie" msprop:Generator_ColumnPropNameInTable="ImieColumn" msprop:Generator_ColumnPropNameInRow="Imie" msprop:Generator_ColumnVarNameInTable="columnImie" type="xs:string" minOccurs="0" />
+              <xs:element name="Nazwisko" msprop:Generator_UserColumnName="Nazwisko" msprop:Generator_ColumnPropNameInTable="NazwiskoColumn" msprop:Generator_ColumnPropNameInRow="Nazwisko" msprop:Generator_ColumnVarNameInTable="columnNazwisko" type="xs:string" minOccurs="0" />
+              <xs:element name="Adres" msprop:Generator_UserColumnName="Adres" msprop:Generator_ColumnPropNameInTable="AdresColumn" msprop:Generator_ColumnPropNameInRow="Adres" msprop:Generator_ColumnVarNameInTable="columnAdres" type="xs:string" minOccurs="0" />
+              <xs:element name="Płeć" msprop:Generator_ColumnPropNameInRow="Płeć" msprop:Generator_ColumnPropNameInTable="PłećColumn" msprop:Generator_ColumnVarNameInTable="columnPłeć" msprop:Generator_UserColumnName="Płeć" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Tabela_ksiazki" msprop:Generator_RowClassName="Tabela_ksiazkiRow" msprop:Generator_RowEvHandlerName="Tabela_ksiazkiRowChangeEventHandler" msprop:Generator_RowDeletedName="Tabela_ksiazkiRowDeleted" msprop:Generator_RowDeletingName="Tabela_ksiazkiRowDeleting" msprop:Generator_RowEvArgName="Tabela_ksiazkiRowChangeEvent" msprop:Generator_TablePropName="Tabela_ksiazki" msprop:Generator_RowChangedName="Tabela_ksiazkiRowChanged" msprop:Generator_UserTableName="Tabela_ksiazki" msprop:Generator_RowChangingName="Tabela_ksiazkiRowChanging" msprop:Generator_TableClassName="Tabela_ksiazkiDataTable" msprop:Generator_TableVarName="tableTabela_ksiazki">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:int" />
+              <xs:element name="ID_osoby" msprop:Generator_UserColumnName="ID_osoby" msprop:Generator_ColumnPropNameInTable="ID_osobyColumn" msprop:Generator_ColumnPropNameInRow="ID_osoby" msprop:Generator_ColumnVarNameInTable="columnID_osoby" type="xs:int" minOccurs="0" />
+              <xs:element name="Tytuł" msprop:Generator_UserColumnName="Tytuł" msprop:Generator_ColumnPropNameInTable="TytułColumn" msprop:Generator_ColumnPropNameInRow="Tytuł" msprop:Generator_ColumnVarNameInTable="columnTytuł" type="xs:string" minOccurs="0" />
+              <xs:element name="Autor" msprop:Generator_UserColumnName="Autor" msprop:Generator_ColumnPropNameInTable="AutorColumn" msprop:Generator_ColumnPropNameInRow="Autor" msprop:Generator_ColumnVarNameInTable="columnAutor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Tabela_osob" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="Tabela_ksiazki_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Tabela_ksiazki" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:keyref name="Tabela_osob_Tabela_ksiazki" refer="Constraint1" msprop:rel_Generator_UserParentTable="Tabela_osob" msprop:rel_Generator_UserChildTable="Tabela_ksiazki" msprop:rel_Generator_RelationVarName="relationTabela_osob_Tabela_ksiazki" msprop:rel_Generator_ChildPropName="GetTabela_ksiazkiRows" msprop:rel_Generator_UserRelationName="Tabela_osob_Tabela_ksiazki" msprop:rel_Generator_ParentPropName="Tabela_osobRow">
+      <xs:selector xpath=".//mstns:Tabela_ksiazki" />
+      <xs:field xpath="mstns:ID_osoby" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
